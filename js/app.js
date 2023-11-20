@@ -34,7 +34,7 @@ const showCountryDetails = country => {
     const detailsContainer = document.getElementById("country-details");
     const showDiv = document.createElement("div");
     showDiv.innerHTML = `
-    <img src= "${country[0].flags.png}" >
+    <img class="h-48" src= "${country[0].flags.png}" >
     <p class="my-2">Official Name : <span class="font-medium">${country[0].name.official}</span></p>
     
     <p class="my-2">Continents : <span class="font-medium">${country[0].continents[0]}</span></p>
