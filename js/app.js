@@ -63,13 +63,13 @@ document.getElementById("all").addEventListener("click", function () {
 
 const regionName = (id) => {
     const regionText = document.getElementById(id).innerText;
-    console.log(regionText);
+    // console.log(regionText);
     regionalDetails(regionText);
 }
 
 const regionalDetails = async (regionText) => {
   const url = `https://restcountries.com/v3.1/region/${regionText}`;
-  console.log(url);
+//   console.log(url);
   const res = await fetch(url);
   const data = await res.json();
   getCountryDetails(data);
